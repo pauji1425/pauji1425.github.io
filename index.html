@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Undangan Pernikahan Nova & Agus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Musik Latar -->
+<audio id="background-music" autoplay loop>
+  <source src="musik1.mp3" type="audio/mpeg">
+  Browser Anda tidak mendukung audio.
+</audio>
+
+<!-- Background -->
+<div class="background-overlay"></div>
+
+<!-- Konten Undangan -->
+<div class="container">
+
+  <h1 class="title fade-in">Undangan Pernikahan</h1>
+
+  <div class="couple-names">
+    <h2 class="outline-text fade-in">Nova Lia Hasibuan</h2>
+        <img src="gambar1.jpg" alt="Nova Lia Hasibuan" class="photo">
+    <p>Putri dari Bapak Alm. Basir Hasibuan dan Ibu Mariyam</p>
+
+    <h2 class="outline-text fade-in">Agus Salim</h2>
+    <img src="gambar2.jpg" alt="Agus Salim" class="photo">
+    <p>Putra dari Bapak Syaifuddin dan Ibu Anita</p>
+  </div>
+
+  <div class="event-details">
+    <h3>Akad Nikah</h3>
+    <p>Sabtu, 6 Juni 2025</p>
+
+    <h3>Resepsi</h3>
+    <p>Minggu, 7 Juni 2025<br>
+    Pukul 10.00 WIB sampai selesai</p>
+
+    <p>Alamat: Jl. Kampung Baru Kuala Dusun I, Desa Sei Sakat</p>
+
+    <a href="https://maps.google.com/?q=Jl.+Kampung+Baru+Kuala+Dusun+I+Desa+Sei+Sakat" target="_blank" class="btn-maps">Lihat Lokasi</a>
+  </div>
+
+  <div class="gallery">
+    <h3>Galeri</h3>
+    <div class="gallery-photos">
+        <span class="close">&times;</span>
+        <img src="gambar1.jpg" alt="Galeri Foto 1" class="zoom-in">
+        <img src="gambar2.jpg" alt="Galeri Foto 1" class="zoom-in">
+        <img src="gambar3.jpg" alt="Galeri Foto 1" class="zoom-in">
+    </div>
+  </div>
+
+  <div class="rsvp">
+    <h3>RSVP & Ucapan</h3>
+    <form id="rsvp-form">
+      <input type="text" placeholder="Nama Anda" required><br>
+      <textarea placeholder="Ucapan Doa..." required></textarea><br>
+      <button type="submit">Kirim</button>
+    </form>
+    <div id="rsvp-list"></div>
+  </div>
+
+  <div class="closing">
+    <h3>Terima Kasih</h3>
+    <p>"Cinta sejati adalah ketika kebahagiaan orang lain lebih penting dari kebahagiaanmu sendiri."</p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
