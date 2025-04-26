@@ -1,0 +1,239 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    color: #000000;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff;
+  }
+  
+  .background-overlay {
+    background: url('latar.jpg') no-repeat center center/cover;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    filter: brightness(100%);
+    z-index: -40;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 3em;
+    color: #ff0f7f;
+    margin-bottom: 60px;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff;
+  }
+  
+  .couple-names h2 {
+    margin-top: 20px;
+    font-size: 2em;
+  }
+  
+  .photo {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px 0;
+    border: 7px solid #f70489;
+  }
+  
+  .event-details, .gallery, .rsvp, .closing {
+    margin: 30px 0;
+  }
+  
+  .btn-maps {
+    background-color: #d6336c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+  }
+  
+  .gallery-photos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .gallery-photos img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #d6336c;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #d6336c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  #rsvp-list {
+    margin-top: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .outline-text {
+    font-size: 2em;
+    color: #ff0080; /* Warna teks */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7), -2px -2px 4px rgba(255, 255, 255, 0.7), 2px -2px 4px rgba(255, 255, 255, 0.7), -2px 2px 4px rgba(255, 255, 255, 0.7);
+  }
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInMove 1.5s ease-out forwards;
+  }
+  
+  @keyframes fadeInMove {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.zoom-in {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: zoomIn 1s ease-out forwards;
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.zoom-in {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: zoomIn 1s ease-out forwards;
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.zoom-in {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: zoomIn 1s ease-out forwards;
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  .gallery-photos img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: zoomIn 1s ease-out forwards;
+  }
+  
+  /* Animasi zoom-in */
+  @keyframes zoomIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Tambahkan delay khusus untuk masing-masing foto */
+  .gallery-photos img:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .gallery-photos img:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  
+  .gallery-photos img:nth-child(3) {
+    animation-delay: 0.8s;
+  }
+  .gallery-photos img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(255, 105, 180, 0.6); /* Pink glow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+/* Lightbox container */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+  /* Lightbox image */
+  .lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Close button */
+  .close {
+    position: absolute;
+    top: 50px;
+    right: 70px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .close:hover {
+    color: #ff69b4; /* pink saat hover */
+  }
+        
